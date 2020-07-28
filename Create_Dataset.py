@@ -31,5 +31,5 @@ for i in random:
 labels_random = np.array(labels_random)
 sequences = np.array(sequences)
 
-#np.save('Sequences_Random_50.npy', sequences)
-#np.save('Labels_Random_50.npy', labels_random)
+np.save('Sequences_Random_50.npy', sequences)
+np.save('Labels_Random_50.npy', labels_random)

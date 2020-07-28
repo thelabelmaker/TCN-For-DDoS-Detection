@@ -231,6 +231,6 @@ nd['Fwd Header Len'] = Fwd_Len_Norm[0]
 nd['Bwd Header Len'] = Bwd_Len_Norm[0]
 nd['Flow Duration'] = Flow_Duration_Norm[0]
 gc.collect()
-#nd.to_csv("One Encoded and Reg.csv")
+nd.to_csv("One Encoded and Reg.csv")
 labels = pd.DataFrame(nd['Label'])
-#labels.to_csv("The Right Labels.csv")
+labels.to_csv("The Right Labels.csv")
