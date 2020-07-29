@@ -26,7 +26,7 @@ for i in range(len(s)):
     s_df = s_df[s_df['Dst IP'] != s[i]]
     print(str(i/len(s)))
 print(len(s_a))
-Dst_IP = s_a.copy()
+Dst_IP = list(s_a.copy())
 del s_a
 del s
 del s_df
@@ -48,7 +48,7 @@ for i in range(len(s)):
     s_df = s_df[s_df['Dst Port'] != s[i]]
     print(str(i/len(s)))
 print(len(s_a))
-Dst_Port = s_a.copy()
+Dst_Port = list(s_a.copy())
 del s_a
 del s
 del s_df
@@ -69,7 +69,7 @@ for i in range(len(s)):
     s_df = s_df[s_df['Src IP'] != s[i]]
     print(str(i/len(s)))
 print(len(s_a))
-Src_IP = s_a.copy()
+Src_IP = list(s_a.copy())
 del s_a
 del s
 del s_df
@@ -90,7 +90,7 @@ for i in range(len(s)):
     s_df = s_df[s_df['Src Port'] != s[i]]
     print(str(i/len(s)))
 print(len(s_a))
-Src_Port = s_a.copy() 
+Src_Port = list(s_a.copy())
 del s_a
 del s
 del s_df
