@@ -106,19 +106,20 @@ plt.savefig('Loss per Epoch No IP.png')
 
 print(model.evaluate(X_test, y_test))
 print(model.evaluate(X_val, y_val))
+
 predictions = model.predict(X_val)
-print(tf.math.confusion_matrix(y_val, predictions, num_classes=2))
+#print(tf.math.confusion_matrix(y_val, predictions, num_classes=2))
 print(confusion_matrix(y_val, predictions.round()))
 print(f1_score(y_val, predictions.round(), average='macro'))
 
 
 predictions = model.predict(X_train)
-print(tf.math.confusion_matrix(y_train, predictions, num_classes=2))
+#print(tf.math.confusion_matrix(y_train, predictions, num_classes=2))
 print(confusion_matrix(y_train, predictions.round()))
 print(f1_score(y_train, predictions.round(), average='macro'))
 
 predictions = model.predict(X_test)
-print(tf.math.confusion_matrix(y_test, predictions, num_classes=2))
+#print(tf.math.confusion_matrix(y_test, predictions, num_classes=2))
 print(confusion_matrix(y_test, predictions.round()))
 print(f1_score(y_test, predictions.round(), average='macro'))
 
