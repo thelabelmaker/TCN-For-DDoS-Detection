@@ -4,3 +4,9 @@ Labels_Random_50.npy
 One Encoded and Reg.csv
 The Right Labels.csv
 testing.py
+Accuracy per Epoch No IP.png
+Loss per Epoch No IP.png
+Accuracy per Epoch With IP.png
+Loss per Epoch With IP.png
+/NO_IP_MODEL
+/WITH_IP_MODEL
