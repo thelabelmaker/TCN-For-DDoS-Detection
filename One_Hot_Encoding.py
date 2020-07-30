@@ -8,7 +8,7 @@ from sklearn import preprocessing
 nd = pd.DataFrame(pd.read_csv('datasets_179276_403373_ddos_imbalanced_unbalaced_20_80_dataset (1).csv').sort_values('Timestamp', ascending=False), 
                             columns = ['Src IP', 'Src Port', 'Dst IP', 'Dst Port', 'Protocol', 'Flow Duration', 'Fwd PSH Flags',
                                       'Bwd PSH Flags', 'Fwd Header Len', 'Bwd Header Len', 'FIN Flag Cnt', 'SYN Flag Cnt', 'RST Flag Cnt',
-                                      'PSH Flag Cnt','ACK Flag Cnt','URG Flag Cnt','CWE Flag Count', 'ECE Flag Cnt', 'Label'])
+                                      'PSH Flag Cnt','ACK Flag Cnt','URG Flag Cnt','CWE Flag Count', 'ECE Flag Cnt', 'Label', 'Timestamp'])
 gc.collect()
 
 s = set()

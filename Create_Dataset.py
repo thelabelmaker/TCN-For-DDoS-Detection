@@ -3,7 +3,7 @@ import pandas as pd
 import gc
 from numpy.random import rand
 
-nd = pd.read_csv('One Encoded and Reg.csv').sort_values('Timestamp', ascending=False).drop(columns=['Timestamp', 'Label']).drop(columns=['Unnamed: 0'])
+nd = pd.read_csv('One Encoded and Reg.csv').sort_values('Timestamp', ascending=False).drop(columns=['Label']).drop(columns=['Unnamed: 0'])
 gc.collect()
 nd_np = np.array(nd)
 random = rand(1, 1200000)*(len(nd)-50)
